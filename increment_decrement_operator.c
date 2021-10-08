@@ -8,5 +8,5 @@ int a,b;
 	printf("a++=%d\nb=%d\n",a++,b=a);
 	printf("++a=%d\nb=%d\n",++a,b=a);
 	printf("a--=%d\nb=%d\n",a--,b=a);
-		printf("--a=%d\nb=%d\n",--a,b=a);
+	printf("--a=%d\nb=%d\n",--a,b=a);
 }
