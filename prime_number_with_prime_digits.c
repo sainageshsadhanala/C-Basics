@@ -16,7 +16,7 @@ int main()
 		}
 	}
    //printf("f1=%d",f1);
-	if(f1<=2)//indicates n is a prime so checking the digits
+	if(f1==2)//indicates n is a prime so checking the digits
 	{
 		for(n=n;n!=0;n=n/10)
 		{
@@ -28,7 +28,7 @@ int main()
 				{
 					f2++;//no of factors increases
 				}
-				if(f2>2)
+				if(f2>2 || f2<2)
 				{
 					break;//factors more than two means composite digit
 				}
@@ -36,11 +36,11 @@ int main()
 		}
 	}
 	//printf("%d\n",f2);//factors of first composite digit where loop breaks
-	if(f1<=2 && f2<=2)
+	if(f1==2 && f2==2)
 	{
 		printf("%d is prime number with prime digits",n2);
 	}
-	else if(f1<=2 && f2>2)
+	else if(f1==2 && f2!=2)
 	{
 		printf("%d is prime number with prime and composite digits",n2);
 	}
